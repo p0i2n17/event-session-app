@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全域場次指揮中心"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv_title_main"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/text_primary"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_main"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_smart_scan"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="📸 智慧建檔"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="8dp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/accent_primary"
+            app:iconPadding="0dp"
+            style="@style/Widget.Material3.Button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_scan_qr_menu"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="📷 掃 QR"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="8dp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/bg_button"
+            android:textColor="@color/text_primary"
+            app:iconPadding="0dp"
+            style="@style/Widget.Material3.Button" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_global_search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/ll_top_actions"
+        android:layout_marginTop="8dp"
+        android:text="🔍 參戰史查詢"
+        android:textSize="12sp"
+        android:minWidth="0dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/bg_button"
+        android:textColor="@color/text_primary"
+        app:iconPadding="0dp"
+        style="@style/Widget.Material3.Button" />
+
+    <ListView
+        android:id="@+id/list_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_global_search"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="手動新增"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/accent_primary"
+        app:tint="@color/text_primary"/>
+
+</RelativeLayout>

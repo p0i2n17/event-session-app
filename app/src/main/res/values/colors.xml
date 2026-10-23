@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Dark Theme Colors -->
+    <color name="bg_primary">#FF0F0F14</color>
+    <color name="bg_card">#FF1A1A24</color>
+    <color name="bg_input">#FF222232</color>
+    <color name="bg_button">#FF2A2A3A</color>
+    <color name="accent_primary">#FF7C4DFF</color>
+    <color name="accent_secondary">#FFBB86FC</color>
+    <color name="accent_favorite">#FFFFAB40</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0B0C0</color>
+    <color name="text_hint">#FF666680</color>
+    <color name="divider">#FF2A2A3A</color>
+    <color name="done_tint">#FF69F0AE</color>
+    <color name="delete_red">#FFFF5252</color>
+</resources>
